@@ -24,4 +24,13 @@ class StringUtilsTest {
     void reverse_null() {
         assertNull(StringUtils.reverse(null));
     }
+    @Test
+    void capitalize_normal() {
+        assertEquals("Hello", StringUtils.capitalize("hello"));
+    }
+
+    @Test
+    void isBlank_null() {
+        assertTrue(StringUtils.isBlank(null));
+    }
 }
